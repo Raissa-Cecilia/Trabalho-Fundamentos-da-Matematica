@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aporte Periodicos</title>
+    <link rel="stylesheet" href="aporte.css">
+</head>
+<body>
+     <div class="container">
+    <h1>Análise de investimentos com aportes periódicos</h1>
+    <h2>Questão 2</h2>
+
+    <div class="input-group">
+        <label for="capital">Capital inicial em (R$)</label>
+        <input type="number" id="capital" value="777">
+    </div>
+    <div class="input-group">
+        <label for="aporte">Aporte periódico (R$)</label>
+        <input type="number" id="aporte" value="200">
+    </div>
+    <div class="input-group">
+        <label for="tempo">Tempo de aplicação (meses)</label>
+        <input type="number" id="tempo" value="12">
+    </div>
+    <div class="input-group">
+        <label for="taxa">Taxa de Aplicação (% ao mes)</label>
+        <input type="number" id="taxa" value="1">
+    </div>
+    <div class="input-group">
+        <label for="ipca">Taxa estimada para o IPCA (% ao mes)</label>
+        <input type="number" id="ipca" value="0.2">
+    </div>
+
+     <button id="calcular">Calcular</button>
+
+     <div class="results">
+    <h3>Resultados</h3>
+    
+    <div class="result-item">
+        <strong>Montante com Aplicação:</strong> 
+        <span id="montanteAplicacao">R$ 0,00</span>
+    </div>
+    
+    <div class="result-item">
+        <strong>Montante com IPCA:</strong> 
+        <span id="montanteIPCA">R$ 0,00</span>
+    </div>
+    
+    <div class="result-item">
+        <strong>Diferença:</strong> 
+        <span id="diferenca">R$ 0,00</span>
+    </div>
+</div>
+
+<canvas id="grafico" width="400" height="200"></canvas>
+</div>
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="aporte.js"></script>
+</body>
+</html>

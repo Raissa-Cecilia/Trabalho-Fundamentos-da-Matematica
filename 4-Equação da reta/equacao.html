@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Equação da Reta</title>
+    <link rel="stylesheet" href="estiloReta.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Análise da Equação da Reta</h1>
+        <h1>Questã0 4</h1>
+        
+        <div class="input-section">
+            <h2>Ponto 1 (x1, y1)</h2>
+            <div class="input-group">
+                <label for="x1">x1:</label>
+                <input type="number" id="x1" value="1">
+            </div>
+            <div class="input-group">
+                <label for="y1">y1:</label>
+                <input type="number" id="y1" value="2">
+            </div>
+
+            <h2>Ponto 2 (x2, y2)</h2>
+            <div class="input-group">
+                <label for="x2">x2:</label>
+                <input type="number" id="x2" value="3">
+            </div>
+            <div class="input-group">
+                <label for="y2">y2:</label>
+                <input type="number" id="y2" value="6">
+            </div>
+        </div>
+        
+        <button id="calcular">Calcular Reta</button>
+        
+        <div class="results">
+            <h2>Lei da Função (f(x) = ax + b)</h2>
+            <div class="result-item">
+                <strong>Coeficiente Angular (a):</strong>
+                <span id="coeficienteA">0.00</span>
+            </div>
+            <div class="result-item">
+                <strong>Coeficiente Linear (b):</strong>
+                <span id="coeficienteB">0.00</span>
+            </div>
+            <div class="result-item equation">
+                <strong>Equação:</strong>
+                <span id="equacao">f(x) = 0.00x + 0.00</span>
+            </div>
+
+            <h2>Intersecções</h2>
+            <div class="result-item">
+                <strong>Eixo X (Raiz):</strong>
+                <span id="intersecaoX">(0.00, 0)</span>
+            </div>
+            <div class="result-item">
+                <strong>Eixo Y:</strong>
+                <span id="intersecaoY">(0, 0.00)</span>
+            </div>
+            
+            <div id="erro" class="error-message"></div>
+        </div>
+
+        <div class="chart-container">
+            <h2>Gráfico da Reta</h2>
+            <canvas id="graficoReta"></canvas>
+        </div>
+    </div>
+    <script src="Reta.js"></script>
+</body>
+</html>

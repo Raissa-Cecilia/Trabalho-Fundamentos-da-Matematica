@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imposto de Renda Retido na Fonte</title>
+    <link rel="stylesheet" href="imposto.css">
+</head>
+<body>
+    <h1>Imposto de Renda Retido na Fonte</h1>
+    <h1>Questão 3</h1>
+    <div class="container">
+        <div class="input-group">
+            <label for="salario">Salário Bruto (R$):</label>
+            <input type="number" id="salario" >
+        </div>
+        
+        <div class="input-group">
+            <label for="dependentes">Número de Dependentes:</label>
+            <input type="number" id="dependentes" >
+        </div>
+        
+        <button id="calcular">Calcular</button>
+        
+        <div class="results">
+            <div class="result-item">
+                <strong>Valor Base de Cálculo:</strong> 
+                <span id="valorBase">R$ 0,00</span>
+            </div>
+
+            <div class="result-item">
+                <strong>Valor IRRF a ser recolhido:</strong> 
+                <span id="valorRecolhido">R$ 0,00</span>
+            </div>
+       </div>
+
+       <div class="graficos">
+           <div class="grafico-container">
+               <h3>Evolução do IRRF com Dedução (Sistema Atual)</h3>
+               <canvas id="grafico1" width="600" height="300"></canvas>
+           </div>
+           
+           <div class="grafico-container">
+               <h3>Evolução do IRRF sem Parcela a Deduzir</h3>
+               <canvas id="grafico2" width="600" height="300"></canvas>
+           </div>
+       </div>
+    </div>
+       
+    <script src="imposto.js"></script>
+
+</body>
+</html>

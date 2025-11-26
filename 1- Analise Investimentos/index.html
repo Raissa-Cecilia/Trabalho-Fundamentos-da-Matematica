@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Análise de Investimentos</title>
+    <link rel="stylesheet" href="estiloTrabalho.css">
+</head>
+<body>
+    <h1>Análise de Investimentos</h1>
+    <h1>Questão 1</h1>
+    <div class="container">
+        <div class="input-group">
+            <label for="capital">Capital Inicial (R$):</label>
+            <input type="number" id="capital" value="1000">
+        </div>
+        
+        <div class="input-group">
+            <label for="tempo">Tempo (meses):</label>
+            <input type="number" id="tempo" value="12">
+        </div>
+        
+        <div class="input-group">
+            <label for="taxaAplicacao">Taxa de Aplicação (% ao mês):</label>
+            <input type="number" id="taxaAplicacao" value="1" step="0.01">
+        </div>
+        
+        <div class="input-group">
+            <label for="taxaIPCA">Taxa do IPCA (% ao mês):</label>
+            <input type="number" id="taxaIPCA" value="0.5" step="0.01">
+        </div>
+        
+        <button id="calcular">Calcular</button>
+        
+        <div class="results">
+            <div class="result-item">
+                <strong>Montante com Aplicação:</strong> 
+                <span id="montanteAplicacao">R$ 0,00</span>
+            </div>
+            
+            <div class="result-item">
+                <strong>Montante com IPCA:</strong> 
+                <span id="montanteIPCA">R$ 0,00</span>
+            </div>
+            
+            <div class="result-item">
+                <strong>Diferença:</strong> 
+                <span id="diferenca">R$ 0,00</span>
+            </div>
+            
+            <div id="conclusao" class="conclusion">
+            </div>
+        </div>
+        
+        <div class="chart-container">
+            <canvas id="grafico"></canvas>
+        </div>
+        
+        <table id="tabela">
+            <thead>
+                <tr>
+                    <th>Mês</th>
+                    <th>Aplicação (R$)</th>
+                    <th>IPCA (R$)</th>
+                    <th>Diferença (R$)</th>
+                </tr>
+            </thead>
+            <tbody id="tabelaDados">
+            </tbody>
+        </table>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="trabalhoJavaS.js"></script>
+</body>
+</html>

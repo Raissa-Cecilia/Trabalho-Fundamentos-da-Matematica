@@ -1,0 +1,14 @@
+C:\Users\Raissa\Documents\2semestre\FundamentosMatematica\Trabalho\bin\Debug\net9.0\Trabalho.exe
+C:\Users\Raissa\Documents\2semestre\FundamentosMatematica\Trabalho\bin\Debug\net9.0\Trabalho.deps.json
+C:\Users\Raissa\Documents\2semestre\FundamentosMatematica\Trabalho\bin\Debug\net9.0\Trabalho.runtimeconfig.json
+C:\Users\Raissa\Documents\2semestre\FundamentosMatematica\Trabalho\bin\Debug\net9.0\Trabalho.dll
+C:\Users\Raissa\Documents\2semestre\FundamentosMatematica\Trabalho\bin\Debug\net9.0\Trabalho.pdb
+C:\Users\Raissa\Documents\2semestre\FundamentosMatematica\Trabalho\obj\Debug\net9.0\Trabalho.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Raissa\Documents\2semestre\FundamentosMatematica\Trabalho\obj\Debug\net9.0\Trabalho.AssemblyInfoInputs.cache
+C:\Users\Raissa\Documents\2semestre\FundamentosMatematica\Trabalho\obj\Debug\net9.0\Trabalho.AssemblyInfo.cs
+C:\Users\Raissa\Documents\2semestre\FundamentosMatematica\Trabalho\obj\Debug\net9.0\Trabalho.csproj.CoreCompileInputs.cache
+C:\Users\Raissa\Documents\2semestre\FundamentosMatematica\Trabalho\obj\Debug\net9.0\Trabalho.dll
+C:\Users\Raissa\Documents\2semestre\FundamentosMatematica\Trabalho\obj\Debug\net9.0\refint\Trabalho.dll
+C:\Users\Raissa\Documents\2semestre\FundamentosMatematica\Trabalho\obj\Debug\net9.0\Trabalho.pdb
+C:\Users\Raissa\Documents\2semestre\FundamentosMatematica\Trabalho\obj\Debug\net9.0\Trabalho.genruntimeconfig.cache
+C:\Users\Raissa\Documents\2semestre\FundamentosMatematica\Trabalho\obj\Debug\net9.0\ref\Trabalho.dll

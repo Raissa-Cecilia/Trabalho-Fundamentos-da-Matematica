@@ -1,0 +1,126 @@
+/* Estilos para a Questão 5 - Método da Bisseção */
+body {
+    font-family: Arial, sans-serif;
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+
+h1 {
+    text-align: center;
+    color: #2c3e50;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+.input-group {
+    margin-bottom: 15px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    width: 100%;
+}
+
+button:hover {
+    background-color: #2980b9;
+}
+
+.results {
+    margin-top: 20px;
+    padding: 15px;
+    background-color: #f9f9f9;
+    border-radius: 4px;
+}
+
+.result-item {
+    margin-bottom: 10px;
+}
+
+.conclusion {
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+}
+
+.positive {
+    background-color: #d4ffd4;
+    color: #006400;
+}
+
+.negative {
+    background-color: #ffd4d4;
+    color: #8b0000;
+}
+
+.neutral {
+    background-color: #e6e6e6;
+    color: #666;
+}
+
+.chart-container {
+    margin-top: 20px;
+    height: 400px; 
+    position: relative;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background-color: #fafafa;
+}
+
+#grafico{
+    height: 410px;
+    width: 890px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+
+#statusIntervalo {
+    font-weight: bold;
+}
+
+#resultadoFinal {
+    font-weight: bold;
+    color: #2c3e50;
+}
