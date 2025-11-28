@@ -16,10 +16,25 @@ document.getElementById("calcular").addEventListener("click", () => {
     let dadosAplicacao = [];
     let dadosIPCA = [];
 
+    
+    const tabela = document.getElementById("tabelaDados");
+    tabela.innerHTML = "";
+
     for (let mes = 1; mes <= tempo; mes++) {
-        
+
+      
         montanteAplicacao = montanteAplicacao * (1 + taxaAplicacao) + aporte;
         montanteIPCA = montanteIPCA * (1 + taxaIPCA) + aporte;
+
+        
+        const linha = document.createElement("tr");
+        linha.innerHTML = `
+            <td>${mes}</td>
+            <td>R$ ${montanteAplicacao.toFixed(2)}</td>
+            <td>R$ ${montanteIPCA.toFixed(2)}</td>
+            <td>R$ ${(montanteAplicacao - montanteIPCA).toFixed(2)}</td>
+        `;
+        tabela.appendChild(linha);
 
        
         if (mes % intervalo === 0 || mes === tempo) {
@@ -31,17 +46,19 @@ document.getElementById("calcular").addEventListener("click", () => {
 
     const diferenca = montanteAplicacao - montanteIPCA;
 
+   
     document.getElementById("montanteAplicacao").textContent = `R$ ${montanteAplicacao.toFixed(2)}`;
     document.getElementById("montanteIPCA").textContent = `R$ ${montanteIPCA.toFixed(2)}`;
     document.getElementById("diferenca").textContent = `R$ ${diferenca.toFixed(2)}`;
 
-    
     const ctx = document.getElementById("grafico").getContext("2d");
 
+    
     if (window.graficoInvest) {
-        window.graficoInvest.destroy(); 
+        window.graficoInvest.destroy();
     }
 
+    
     window.graficoInvest = new Chart(ctx, {
         type: "line",
         data: {
@@ -51,36 +68,27 @@ document.getElementById("calcular").addEventListener("click", () => {
                     label: "Com Aplicação",
                     data: dadosAplicacao,
                     borderColor: "#2196F3",
-                    backgroundColor: "rgba(33, 150, 243, 0.2)",
+                    backgroundColor: "rgba(33,150,243,0.2)",
                     borderWidth: 2,
-                    tension: 0.3
+                    tension: 0.2
                 },
                 {
-                    label: "Com IPCA",
+                    label: "IPCA",
                     data: dadosIPCA,
-                    borderColor: "#F2B138",
-                    backgroundColor: "rgba(242, 177, 56, 0.2)",
+                    borderColor: "#F44336",
+                    backgroundColor: "rgba(244,67,54,0.2)",
                     borderWidth: 2,
-                    tension: 0.3
+                    tension: 0.2
                 }
             ]
         },
         options: {
             responsive: true,
-            plugins: {
-                legend: {
-                    position: "top"
-                },
-                title: {
-                    display: true,
-                    text: "Evolução do Montante"
-                }
-            },
             scales: {
-                y: {
-                    beginAtZero: false
-                }
+                y: { beginAtZero: false }
             }
         }
     });
+
 });
+
